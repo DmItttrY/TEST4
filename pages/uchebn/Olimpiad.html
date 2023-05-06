@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../../css/MyStyle1.css" rel="stylesheet">
+    <title>Олимпиада</title>
+    <script src="../../js/Ucheb/Olimp.js"></script>
+</head>
+<body>
+<div id="appOd"><h1>Информация об участии в олимпиаде</h1></div>
+<form>
+    <fieldset>
+        <div class = "appOd">
+            <select id="selectOblUch">
+                <option value=”estestv”>Естественные науки</option>
+                <option value=”human”>Гуманитарные науки</option>
+                <option value=”technics”>Технические науки</option>
+                <option value=”social”>Общественные науки</option>
+            </select>
+            <select id="selectStaUch">
+                <option value=”uchastnik”>Участник</option>
+                <option value=”prizer”>Призер</option>
+                <option value=”pobeditel”>Победитель</option>
+            </select>
+            <select id="selectUrovUch">
+                <option value=”intenational”>Международный</option>
+                <option value=”federal”>Федеральный</option>
+                <option value=”region”>Региональный</option>
+                <option value=”univercity”>ВУЗа</option>
+            </select>
+            <p><label for="name">Наименование <em>*</em></label><input type="text" id="name"></p>
+            <p><label for="date">Дата</label><input type="date" id="date"></p>
+            <p><label for="photo">Фото подтверждающего документа</label><input type="file" id="photo"></p>
+        </div>
+    </fieldset>
+    <p><input type="button" id = "addOd" onclick="submitOlimpiad()" value="Добавить"></p>
+    <p><input type="button" id = "return" onclick="document.location = window.location.pathname.substring
+    (0, window.location.pathname.lastIndexOf('/'))+'/Ucheb.html'" value="Вернуться"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/MyStyle1.css" rel="stylesheet">
+    <script src="../js/ForMenu.js"></script>
+    <title>Направление подачи документов</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Меню</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="menu.html">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Ucheb.html">Учебная деятельность</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Nid.html">Научно-исследовательская деятельность</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Sport.html">Спортивная деятельность</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Ctd.html">Культурно-творческая деятельность</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Obd.html">Общественная деятельность</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <section id = "appOd">
+        <div id="app2"><h1>Выбор направления подачи документов</h1></div>
+        <p><input type="button" id = "uch" onclick="document.location = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'))+'/uchebn/Ucheb.html'" value="Учебная деятельность"></p>
+        <p><input type="button" id = "nid" onclick="document.location='/pages/uchebn/Ucheb.html'" value="Научно-исследовательская деятельность"></p>
+        <p><input type="button" id = "sport" onclick="document.location='/pages/uchebn/Ucheb.html'" value="Спортивная деятельность"></p>
+        <p><input type="button" id = "ctd" onclick="document.location='/pages/uchebn/Ucheb.html'" value="Культурно-творческая деятельность"></p>
+        <p><input type="button" id = "obd" onclick="document.location='/pages/uchebn/Ucheb.html'" value="Общественная деятельность"></p>
+    </section>
+    <section id = "databox">
+        Информация недоступна
+    </section>
+    <section>
+        <p><input type="button" id = 'redact' onclick="document.location = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'))+
+        '/index.html'" value="Изменить данные"></p>
+    </section>
+
+</body>
+</html>

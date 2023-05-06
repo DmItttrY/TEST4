@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../../css/MyStyle1.css" rel="stylesheet">
+    <title>Награда</title>
+    <script src="../../js/Ucheb/Attestation.js"></script>
+</head>
+<body>
+<div id="appOd"><h1>Информация о получении в течении 4 последних аттестаций только оценок "Отлично"</h1></div>
+<form>
+    <fieldset>
+        <div class = "app">
+            <p><label for="photo">Фото подтверждающего документа</label><input type="file" id="photo"></p>
+        </div>
+    </fieldset>
+    <p><input type="button" id = "addOd" onclick="submitAttest()" value="Добавить"></p>
+    <p><input type="button" id = "return" onclick="document.location = window.location.pathname.substring
+    (0, window.location.pathname.lastIndexOf('/'))+'/Ucheb.html'" value="Вернуться"></p>
+</form>
+</body>
+</html>

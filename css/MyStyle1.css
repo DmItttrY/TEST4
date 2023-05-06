@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+
+#appOd {
+    background-color: #008CBA;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+#databox {
+    padding: 20px;
+    text-align: center;
+}
+
+fieldset {
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.appOd {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select, input[type="text"], input[type="date"], input[type="file"] {
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="button"] {
+    background-color: #008CBA;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+input[type="button"]:hover {
+    background-color: #005B7F;
+}
+
+label em {
+    color: red;
+    font-style: normal;
+}
+
+input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.context-menu {
+    background-color: #4BA3C3;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.context-menu li {
+    margin-bottom: 5px;
+}
+
+.context-menu a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+
+.context-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Стилизация заголовка "Учебная деятельность" */
+.title {
+    color: #4BA3C3;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
